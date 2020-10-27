@@ -1,0 +1,49 @@
+        
+---               AVISO IMPORATNTE 
+
+        Este archivo contiene código fuente que forma parte integral del sistema Atlas, que es
+*	propiedad intelectual de Olga Valdez.
+*	La utilización, modificación, distribución o duplicación en forma total o parcial del
+*	contenido de este archivo, sin la respectiva licencia o permiso emitido por la Gerencia
+*	de Grupo Difare, será considerada como una grave violación a las leyes de propiedad
+*	intelectual de este código, y los infractores serán sujetos a persecuciones, demandas
+*	judiciales y todas las acciones permitidas bajo el marco de la ley.
+
+                     --PROYECTO DE APLICACIONES DISTRIBUIDAS JAVA
+
+                            AUTOR:Olga Valdez
+
+     --Indicaciones de descarga
+
+   1.-  iniciar sesion en https://github.com
+   2.-  Copiar la url del código     https://github.com/OlgaAdriana/Proyecto-sd.git
+   3.- Se descargará un archivo .zip el cual contendra 5 archivos
+   4.- Se debe descomprimir la carpeta y  se deben añadir las librerias(gson-2.6.2 y json-simple-1.1) a los 2 proyectos (Reportero y verificador)
+   5.- este archivo contendra una carpeta ftp la cúal tendrá los archivos del colector(donde se van a ver los datos para ser leidos)
+       
+
+-- Funcionamiento de los módulos
+
+  * El módulo verificador estará encargado de leer los archivos json procedentes del módulo colector (carpeta ftp)
+  - este archivo sera el cliente, el cual enviará una solicitud  al servidor 
+ 
+  *El módulo reportero estará encargado de recibir las peticiones del cliente(Verificador)
+  - este módulo validará que lleguen los datos procedentes del verificador.
+  - este reportero será el encargado de de generar un  nuevo reporte por cada lectura de un nuevo agente, es decir se formará un nuevo archivo json por cada codigo del agente-
+
+
+--FUNCIONAMIENTO DE LOS MÓDULOS 
+
+ - El funcionamiento de estas aplicaciones distribuidas consta de comunicarse por medio de sockets y rutas ip , las cueles pueden comunicarse con  servidores linux ,windows
+ - las cuales simulan la comunicación entre un servidor y un cliente utilizando dos aplicaciones que se comunican por medio de un sockets en java.
+
+- FORMATO DE CODICACIÓN UTILIZADO 
+
+ - Para la creación de este proyecto, se utilizó lenguaje de proframación java 
+ - Una codificación tipo json que se manejó por medio de listas dinámicas , las cuales sirven para la manipulación
+ - de ficheros de textos y archivos json
+ - se simuló un servidor mediante 2 aplicaciones distintas.
+
+Fecha de creación: 26/10/2020   
+Lenguaje de programación: JAVA 
+Pais: Ecuador
